@@ -27,3 +27,4 @@ jobs:
             작업자: ${{ github.actor }}
             커밋 메시지: ${{ github.event.head_commit.message }}
             결과 확인: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            게임 실행: https://ijrobinkim.github.io/UnityWebPlayer
