@@ -1,0 +1,29 @@
+name: Build and Notify
+on: [push]
+
+jobs:
+  build-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Build
+        run: |
+          echo "Building my project..."
+          # 실제 빌드 명령어를 여기에 입력하세요 (예: npm run build)
+
+      # 빌드가 성공했을 때만 실행되는 알림 단계
+      - name: Telegram Notify on Success
+        if: success()
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            ✅ 빌드 성공!
+            
+            URL: ${{ github.repository }}
+            작업자: ${{ github.actor }}
+            커밋 메시지: ${{ github.event.head_commit.message }}
+            결과 확인: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
