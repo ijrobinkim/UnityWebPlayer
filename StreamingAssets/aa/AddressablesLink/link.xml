@@ -1,7 +1,5 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="_Project.Scripts.UI.UIQRCodeReader" preserve="all" />
-    <type fullname="_Project.Scripts.Utils.QRCodeScanner" preserve="all" />
     <type fullname="BubbleBase" preserve="all" />
     <type fullname="CharacterBase" preserve="all" />
     <type fullname="CharacterInteraction" preserve="all" />
@@ -13,6 +11,7 @@
     <type fullname="Fx_CharacterEmotion" preserve="all" />
     <type fullname="FX_GetPoring_01" preserve="all" />
     <type fullname="GetPoringString" preserve="all" />
+    <type fullname="GVFramework.QRCodeScanner" preserve="all" />
     <type fullname="HUD_Close" preserve="all" />
     <type fullname="HUD_Currency" preserve="all" />
     <type fullname="HUD_Menu" preserve="all" />
@@ -54,6 +53,7 @@
     <type fullname="UIPopupOuting" preserve="all" />
     <type fullname="UIPopupOutsideGift" preserve="all" />
     <type fullname="UIPunch" preserve="all" />
+    <type fullname="UIQRCodeReader" preserve="all" />
     <type fullname="UISubPopupBase" preserve="all" />
     <type fullname="UISubPopupCollectionInfo" preserve="all" />
     <type fullname="UISubPopupMailBoxReward" preserve="all" />
